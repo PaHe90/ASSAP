@@ -9,8 +9,8 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="399dp"
-        android:layout_height="130dp"
+        android:layout_width="412dp"
+        android:layout_height="128dp"
         app:layout_constraintBottom_toTopOf="@+id/createnew"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/createnew"
@@ -83,7 +83,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/allreports"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="2dp"
@@ -126,20 +126,16 @@
         app:layout_constraintStart_toStartOf="@+id/textView12"
         app:srcCompat="?android:attr/actionModeCutDrawable" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="91dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#2a1a09"
-        android:text="Button"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ListView
+        android:id="@+id/mobile_list"
+        android:layout_width="226dp"
+        android:layout_height="386dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        android:inputType="textNoSuggestions"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"></ListView>>
 
 </android.support.constraint.ConstraintLayout>
